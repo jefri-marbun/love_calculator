@@ -15,7 +15,7 @@ const LoveCalculator = () => {
 
     const getResultText = (percentage) => {
         if (percentage >= 0 && percentage <= 25) {
-            return "NT ya ges ya";
+            return "Nice Try ya ges ya";
         } else if (percentage > 25 && percentage <= 50) {
             return "Cinta mu masih bisa diperjuangkan";
         } else if (percentage > 50 && percentage <= 75) {
@@ -64,6 +64,7 @@ const LoveCalculator = () => {
                     <p className="love-result-text">{getResultText(percentage)}</p>
                 </div>
             )}
+           
         </div>
     );
 };
