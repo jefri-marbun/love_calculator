@@ -1,0 +1,162 @@
+/* src/styles/LoveCalculator.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/704/443/original/paper-love-valentine-theme-free-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.love-calculator {
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff69b4;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.love-calculator:before, .love-calculator:after {
+    content: '💖';
+    font-size: 3em;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.love-calculator:before {
+    top: -10px;
+    left: -10px;
+}
+
+.love-calculator:after {
+    bottom: -10px;
+    right: -10px;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff1493;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #757575;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.love-input {
+    padding: 15px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: 2px solid #ff69b4;
+    width: 80%;
+    transition: border-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.love-input:focus {
+    border-color: #ff1493;
+    outline: none;
+}
+
+.love-button {
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.love-button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+    background: #ffe4e1;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ff69b4;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.love-bar-container {
+    width: 100%;
+    background: #ffe4e1;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 1px solid #ff69b4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.love-bar {
+    height: 30px;
+    background: #ff69b4;
+    border-radius: 25px;
+    transition: width 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.love-result-text {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ff1493;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.heart-icon {
+    font-size: 5em;
+    color: #ff69b4;
+    margin: 20px 0;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
